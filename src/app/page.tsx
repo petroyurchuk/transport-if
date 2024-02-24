@@ -1,4 +1,4 @@
-import BillBoard from "@/components/BillBoard";
+import { BillBoard } from "@/components";
 
 export default function Home() {
   return (

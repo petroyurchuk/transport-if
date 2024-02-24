@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 
-const BillBoard = () => {
+const BillBoard: React.FC = () => {
   return (
     <div className="w-full h-screen">
       <video
