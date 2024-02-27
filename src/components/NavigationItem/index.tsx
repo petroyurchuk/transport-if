@@ -7,7 +7,7 @@ type NavigationItemProps = Omit<dataListT, "id">;
 
 const NavigationItem: React.FC<NavigationItemProps> = ({ value, linkTo }) => {
   return (
-    <li className="cursor-pointer font-semibold tracking-widest">
+    <li className="cursor-pointer font-semibold tracking-widest transition-all duration-150 hover:tracking-[3px]">
       <ScrollLink smooth to={linkTo}>
         {value}
       </ScrollLink>

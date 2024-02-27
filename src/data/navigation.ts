@@ -3,22 +3,22 @@ import { dataListT } from "@/@types/navigation";
 export const navigationData: dataListT[] = [
   {
     id: 1,
-    value: "Трансфери",
+    value: "transfers",
     linkTo: "transfers",
   },
   {
     id: 2,
-    value: "Автопарк",
+    value: "avtopark",
     linkTo: "avtopark",
   },
   {
     id: 3,
-    value: "Чому ми?",
+    value: "whyUs",
     linkTo: "whyUs",
   },
-  {
-    id: 4,
-    value: "Як замовити?",
-    linkTo: "howOrder",
-  },
+  // {
+  //   id: 4,
+  //   value: "Як замовити?",
+  //   linkTo: "howOrder",
+  // },
 ];

@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
-import "./globals.css";
 import { Header } from "@/components";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "Transport IF",
@@ -9,11 +9,17 @@ export const metadata: Metadata = {
 
 type RootLayoutProps = {
   children: React.ReactNode;
+  params: {
+    locale: string;
+  };
 };
 
-export default function RootLayout({ children }: Readonly<RootLayoutProps>) {
+export default function RootLayout({
+  children,
+  params,
+}: Readonly<RootLayoutProps>) {
   return (
-    <html lang="uk">
+    <html lang={params.locale}>
       <body>
         <Header />
         {children}
