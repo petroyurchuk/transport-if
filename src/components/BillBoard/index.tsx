@@ -1,6 +1,7 @@
 import React from "react";
 import { PrinterEffect } from "..";
 import { useTranslations } from "next-intl";
+import Title from "../Title";
 
 const BillBoard: React.FC = () => {
   const t = useTranslations("BillBoard");
@@ -15,8 +16,14 @@ const BillBoard: React.FC = () => {
           loop
         />
       </div>
-      <div className="absolute top-[45%] left-[10%] w-full lg:max-w-[60%] text-white text-[2.3rem]">
-        <PrinterEffect delay={100} originalText={t("originalText")} />
+      <div className="absolute top-[45%] left-[1%] md:left-[10%]   text-white text-[2.3rem] ">
+        <Title
+          tag="h1"
+          styles="text-2xl  md:text-4xl lg:text-8xl font-bold tracking-widest uppercase"
+        >
+          Transport IF
+        </Title>
+        <PrinterEffect originalText={t("originalText")} />
       </div>
     </div>
   );
