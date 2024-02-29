@@ -1,5 +1,6 @@
 "use client";
 import Image from "next/image";
+import { animateScroll } from "react-scroll";
 
 type LogoProps = {
   logoImage: string;
@@ -13,7 +14,12 @@ const Logo: React.FC<LogoProps> = ({ logoImage }) => {
       height={75}
       src={logoImage}
       alt="logo"
-      onClick={() => window.scrollTo(0, 0)}
+      onClick={() => {
+        animateScroll.scrollToTop({
+          smooth: true,
+          duration: 500,
+        });
+      }}
     />
   );
 };

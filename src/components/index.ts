@@ -5,3 +5,5 @@ export { default as Logo } from "./Logo";
 export { default as BillBoard } from "./BillBoard";
 export { default as LocalSwitcher } from "./LocalSwitcher";
 export { default as PrinterEffect } from "./PrinterEffect";
+export { default as Title } from "./Title";
+export { default as Button } from "./Button";

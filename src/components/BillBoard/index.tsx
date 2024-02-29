@@ -1,10 +1,10 @@
 import React from "react";
-import { PrinterEffect } from "..";
+import { Button, PrinterEffect, Title } from "@/components";
 import { useTranslations } from "next-intl";
-import Title from "../Title";
 
 const BillBoard: React.FC = () => {
   const t = useTranslations("BillBoard");
+
   return (
     <div>
       <div className="w-full h-screen absolute top-0">
@@ -16,7 +16,7 @@ const BillBoard: React.FC = () => {
           loop
         />
       </div>
-      <div className="absolute top-[45%] left-[1%] md:left-[10%]   text-white text-[2.3rem] ">
+      <div className="absolute top-[45%] left-[1%] md:left-[10%]   text-white text-[2.3rem] space-y-5 ">
         <Title
           tag="h1"
           styles="text-2xl  md:text-4xl lg:text-8xl font-bold tracking-widest uppercase"
@@ -24,6 +24,7 @@ const BillBoard: React.FC = () => {
           Transport IF
         </Title>
         <PrinterEffect originalText={t("originalText")} />
+        <Button pathScroll="transferOrder">Замовити трансфер</Button>
       </div>
     </div>
   );
