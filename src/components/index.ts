@@ -7,3 +7,6 @@ export { default as LocalSwitcher } from "./LocalSwitcher";
 export { default as PrinterEffect } from "./PrinterEffect";
 export { default as Title } from "./Title";
 export { default as Button } from "./Button";
+export { default as TransferDescription } from "./TransferDescription";
+export { default as Card } from "./Card";
+export { default as AdditionalInformation } from "./AdditionalInformation";

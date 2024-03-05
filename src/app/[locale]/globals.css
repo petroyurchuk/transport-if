@@ -1,3 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.main-title {
+  @apply bg-clip-text bg-minus bg-big  bg-gradient-to-r from-purple-800 via-green-600 to-orange-300 text-transparent animate-gradient whitespace-nowrap text-2xl  md:text-4xl lg:text-8xl font-bold tracking-widest uppercase;
+}

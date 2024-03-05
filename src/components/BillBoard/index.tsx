@@ -6,8 +6,8 @@ const BillBoard: React.FC = () => {
   const t = useTranslations("BillBoard");
 
   return (
-    <div>
-      <div className="w-full h-screen absolute top-0">
+    <div className="relative h-screen">
+      <div className="w-full h-full absolute top-0">
         <video
           src={"/videos/example.mp4"}
           className="w-full h-full object-cover brightness-[60%] transition duration-500"
@@ -17,10 +17,7 @@ const BillBoard: React.FC = () => {
         />
       </div>
       <div className="absolute top-[45%] left-[1%] md:left-[10%]   text-white text-[2.3rem] space-y-5 ">
-        <Title
-          tag="h1"
-          styles="text-2xl  md:text-4xl lg:text-8xl font-bold tracking-widest uppercase"
-        >
+        <Title tag="h1" styles={"main-title"}>
           Transport IF
         </Title>
         <PrinterEffect originalText={t("originalText")} />
