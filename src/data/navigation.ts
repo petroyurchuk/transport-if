@@ -1,4 +1,4 @@
-import { dataListT } from "@/@types/navigation";
+import { dataListT, selectorDataT } from "@/@types/navigation";
 
 export const navigationData: dataListT[] = [
   {
@@ -16,9 +16,15 @@ export const navigationData: dataListT[] = [
     value: "whyUs",
     linkTo: "whyUs",
   },
-  // {
-  //   id: 4,
-  //   value: "Як замовити?",
-  //   linkTo: "howOrder",
-  // },
+];
+
+export const selectorData: selectorDataT[] = [
+  {
+    id: 1,
+    value: "uk",
+  },
+  {
+    id: 2,
+    value: "en",
+  },
 ];
