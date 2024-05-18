@@ -1,10 +1,11 @@
 {
   "Header": {
     "transfers": "Трансфери",
-    "avtopark":"Автопарк",
-    "whyUs":"Чому ми?"
+    "avtopark": "Автопарк",
+    "whyUs": "Чому ми?",
+    "travels": "Подорожі"
   },
-  "BillBoard":{
-    "originalText":"Надійний партнер для комфортних подорожей."
+  "BillBoard": {
+    "originalText": "Надійний партнер для комфортних подорожей."
   }
 }

@@ -61,7 +61,7 @@ const Card: React.FC<CardProps> = ({ title, body, list }) => {
           className="pointer-events-none absolute left-[50%] -translate-x-[100%] bottom-0  text-white uppercase font-bold  tracking-widest text-xl opacity-0 cursor-pointer transition-all duration-150  z-20 bg-gradient-to-r from-red-400 to-purple-600 p-3 rounded-xl hover:shadow-lg hover:shadow-purple-400"
           onClick={handleClose}
         >
-          close
+          Закрити
         </div>
       </div>
     </div>

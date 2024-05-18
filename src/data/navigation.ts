@@ -16,6 +16,11 @@ export const navigationData: dataListT[] = [
     value: "whyUs",
     linkTo: "whyUs",
   },
+  {
+    id: 4,
+    value: "travels",
+    linkTo: "/travels",
+  },
 ];
 
 export const selectorData: selectorDataT[] = [

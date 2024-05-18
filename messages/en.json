@@ -1,10 +1,11 @@
 {
   "Header": {
     "transfers": "Transports",
-    "avtopark":"Cars park",
-    "whyUs":"Why us?"
+    "avtopark": "Cars park",
+    "whyUs": "Why us?",
+    "travels": "Travels"
   },
-  "BillBoard":{
-    "originalText":"Reliable partner for comfortable travel."
+  "BillBoard": {
+    "originalText": "Reliable partner for comfortable travel."
   }
 }

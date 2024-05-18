@@ -1,4 +1,9 @@
-import { BillBoard, TransferDescription } from "@/components";
+import {
+  BillBoard,
+  Carousel,
+  OrderTransfer,
+  TransferDescription,
+} from "@/components";
 import { cardData } from "@/data/card";
 
 export default function Home() {
@@ -14,6 +19,8 @@ export default function Home() {
             list={cardItem.list}
           />
         ))}
+        <Carousel />
+        <OrderTransfer />
       </div>
     </main>
   );
