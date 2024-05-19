@@ -25,3 +25,5 @@ export { default as ListPrice } from "./ListPrice";
 export { default as DetailInfo } from "./DetailInfo";
 export { default as SidebarInfo } from "./SidebarInfo";
 export { default as Footer } from "./Footer";
+export { default as Stages } from "./Stages";
+export { default as Stage } from "./Stage";

@@ -2,6 +2,7 @@ import {
   BillBoard,
   Carousel,
   OrderTransfer,
+  Stages,
   TransferDescription,
 } from "@/components";
 import { cardData } from "@/data/card";
@@ -21,6 +22,7 @@ export default function Home() {
         ))}
         <Carousel />
         <OrderTransfer />
+        <Stages />
       </div>
     </main>
   );
