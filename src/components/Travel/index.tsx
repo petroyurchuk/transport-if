@@ -28,7 +28,7 @@ const Travel: React.FC<TravelProps> = ({ id, travelTitle, travelImage }) => {
         />
       </div>
 
-      <button className="self-end px-5 py-2 bg-pink-600 text-white rounded-md transition-all duration-150 hover:bg-pink-500">
+      <button className="self-end px-5 py-2  text-purple-500 shadow-lg shadow-purple-300 rounded-md transition-all duration-150 hover:shadow-xl hover:shadow-purple-400 hover:scale-x-110 ">
         More...{" "}
       </button>
     </Link>
