@@ -12,22 +12,22 @@ export const listPrice: listPriceT[] = [
     generalPrice: "6 600 грн",
   },
   {
-    id: "1",
+    id: "3",
     quantity: "за 3 особи",
     generalPrice: "9 100 грн",
   },
   {
-    id: "1",
+    id: "4",
     quantity: "за 4 особи",
     generalPrice: "9 800 грн",
   },
   {
-    id: "1",
+    id: "5",
     quantity: "за 5 осіб",
     generalPrice: "12 300 грн",
   },
   {
-    id: "1",
+    id: "6",
     quantity: "за 6 осіб",
     generalPrice: "13 000 грн",
   },

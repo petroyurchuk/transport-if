@@ -22,3 +22,5 @@ export { default as GalleryCarousel } from "./GalleryCarousel";
 export { default as ContactButton } from "./ContactButton";
 export { default as TravelDescription } from "./TravelDescription";
 export { default as ListPrice } from "./ListPrice";
+export { default as DetailInfo } from "./DetailInfo";
+export { default as SidebarInfo } from "./SidebarInfo";
