@@ -10,7 +10,7 @@ export default function Home() {
   return (
     <main className="min-h-screen min-w-full overflow-hidden ">
       <BillBoard />
-      <div className="bg-black/90">
+      <div>
         {cardData.map((cardItem) => (
           <TransferDescription
             key={cardItem.id}

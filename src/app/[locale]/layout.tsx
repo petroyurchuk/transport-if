@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import { Header } from "@/components";
+import Footer from "@/components/Footer";
 
 export const metadata: Metadata = {
   title: "Transport IF",
@@ -19,9 +20,10 @@ export default function RootLayout({
 }: Readonly<RootLayoutProps>) {
   return (
     <html lang={params.locale}>
-      <body>
+      <body className="bg-black/90">
         <Header />
         {children}
+        <Footer />
       </body>
     </html>
   );

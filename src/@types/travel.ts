@@ -1,5 +1,6 @@
 export type TravelT = {
   id: string;
+  direction: string;
   travelTitle: string;
   travelImage: string;
   travelPlan: TravelPlanT[];
