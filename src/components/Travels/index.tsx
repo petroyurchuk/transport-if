@@ -5,12 +5,14 @@ import { Travel } from "@/components";
 import { travels } from "@/data/travels";
 
 const Travels: React.FC = () => {
-  const { direction } = useAppSelector((state) => state.direction);
+  const { searchInput } = useAppSelector((state) => state.search);
 
   return (
     <div className="w-full px-10">
       {travels
-        .filter((travel) => travel.direction === direction)
+        .filter((travel) =>
+          travel.travelTitle.toLowerCase().includes(searchInput.toLowerCase())
+        )
         .map(({ id, travelTitle, travelImage }) => (
           <Travel
             key={id}

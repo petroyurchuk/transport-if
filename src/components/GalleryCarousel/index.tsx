@@ -6,8 +6,13 @@ import Image from "next/image";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
+import { imagesT } from "@/@types/gallery";
 
-const GalleryCarousel: React.FC = () => {
+type GalleryCarouselProps = {
+  images: imagesT[];
+};
+
+const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
   return (
     <div className="w-full">
       <LightGallery
@@ -16,7 +21,25 @@ const GalleryCarousel: React.FC = () => {
         plugins={[lgZoom]}
         mode="lg-fade"
       >
-        <a
+        {images.map(({ id, src, title }) => (
+          <a
+            key={id}
+            href={src}
+            className={`inline-flex ${
+              parseInt(id) % 2 === 0 ? "max-w-[45%]" : "max-w-[25%]"
+            }  w-full mr-2`}
+          >
+            <Image
+              width={parseInt(id) % 2 === 0 ? 450 : 350}
+              height={300}
+              alt={title}
+              src={src}
+              className="min-h-[300px] max-h-[300px]   w-full object-cover"
+            />
+          </a>
+        ))}
+
+        {/* <a
           href="/images/first-car.jpg"
           className="inline-flex max-w-[15%] w-full mr-2"
         >
@@ -51,7 +74,7 @@ const GalleryCarousel: React.FC = () => {
             src="/images/first-car.jpg"
             className="min-h-[300px]   w-full object-cover"
           />
-        </a>
+        </a> */}
       </LightGallery>
     </div>
   );

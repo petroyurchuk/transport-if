@@ -8,9 +8,10 @@ type CardProps = {
   title: string;
   body: string;
   list: CardListT[];
+  buttonValue: string;
 };
 
-const Card: React.FC<CardProps> = ({ title, body, list }) => {
+const Card: React.FC<CardProps> = ({ title, body, list, buttonValue }) => {
   const targetRef = React.useRef<HTMLDivElement>(null);
   const [scope, animate] = useAnimate();
   const { scrollYProgress } = useScroll({
@@ -43,14 +44,16 @@ const Card: React.FC<CardProps> = ({ title, body, list }) => {
     >
       <motion.article
         ref={targetRef}
-        className={`w-full lg:w-[70%] min-h-[600px] flex flex-col items-center justify-center gap-5 text-white text-lg tracking-wider rounded-xl shadow-2xl cursor-pointer z-10 `}
+        className={`w-[90%] lg:w-[70%] min-h-[300px] md:min-h-[600px] flex flex-col items-center justify-center gap-5 text-white text-lg tracking-wider rounded-xl shadow-2xl cursor-pointer z-10 `}
         style={{ scaleX, opacity, backgroundColor }}
         onClick={() => handleExtend()}
       >
-        <Title tag="h2" styles="text-4xl font-bold">
+        <Title tag="h2" styles="text-xl md:text-4xl font-bold">
           {title}
         </Title>
-        <p className="text-2xl max-w-[70%] text-center font-semibold">{body}</p>
+        <p className="text-lg text-justify  w-full p-3  md:text-2xl md:max-w-[70%] md:text-center md:font-semibold">
+          {body}
+        </p>
       </motion.article>
       <div className="absolute right-0 max-w-[30%] min-h-[600px] ">
         <div id="extend-list" className="w-full translate-x-[100%] opacity-50">
@@ -61,7 +64,7 @@ const Card: React.FC<CardProps> = ({ title, body, list }) => {
           className="pointer-events-none absolute left-[50%] -translate-x-[100%] bottom-0  text-white uppercase font-bold  tracking-widest text-xl opacity-0 cursor-pointer transition-all duration-150  z-20 bg-gradient-to-r from-red-400 to-purple-600 p-3 rounded-xl hover:shadow-lg hover:shadow-purple-400"
           onClick={handleClose}
         >
-          Закрити
+          {buttonValue}
         </div>
       </div>
     </div>

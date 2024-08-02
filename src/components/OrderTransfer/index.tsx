@@ -1,15 +1,25 @@
 import React from "react";
 import { Form, Title } from "@/components";
+import { useTranslations } from "next-intl";
 
 type OrderTransferProps = {};
 
 const OrderTransfer: React.FC<OrderTransferProps> = () => {
+  const t = useTranslations("Form");
   return (
-    <div id="transferOrder" className="py-20 h-[500px]">
+    <div id="transfer" className="py-20 h-auto">
       <Title tag="h3" styles="font-bold text-xl text-white text-center mb-5">
-        Замовити трансфер
+        {t("title")}
       </Title>
-      <Form />
+      <Form
+        buttonValue={t("button")}
+        subtitle={t("subtitle")}
+        selectTitle={t("selectTitle")}
+        selectFirst={t("selectFirst")}
+        selectSecond={t("selectSecond")}
+        nameErrorMessage={t("errorName")}
+        phoneErrorMessage={t("errorPhone")}
+      />
     </div>
   );
 };

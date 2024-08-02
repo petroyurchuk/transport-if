@@ -21,7 +21,7 @@ const BillBoard: React.FC = () => {
           Transport IF
         </Title>
         <PrinterEffect originalText={t("originalText")} />
-        <Button pathScroll="transferOrder">Замовити трансфер</Button>
+        <Button pathScroll="transfer">{t("button")}</Button>
       </div>
     </div>
   );

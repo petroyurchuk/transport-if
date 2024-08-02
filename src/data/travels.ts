@@ -4,9 +4,8 @@ export const travels: TravelT[] = [
   {
     id: "1",
     direction: "Bukovel",
-    travelTitle:
-      "ГАСТРО ДЕНЬ | Джип-тур + Гуцульська кухня, пиво, вино та сир | ЩОДНЯ",
-    travelImage: "/images/first-car.jpg",
+    travelTitle: "Сходження на гору Бенджола",
+    travelImage: "/images/benjola/1.jpg",
     travelPlan: [
       {
         id: "1",

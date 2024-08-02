@@ -4,6 +4,7 @@ import {
   OrderTransfer,
   Stages,
   TransferDescription,
+  WhyUsList,
 } from "@/components";
 import { cardData } from "@/data/card";
 
@@ -23,6 +24,7 @@ export default function Home() {
         <Carousel />
         <OrderTransfer />
         <Stages />
+        <WhyUsList />
       </div>
     </main>
   );

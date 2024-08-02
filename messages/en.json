@@ -1,11 +1,54 @@
 {
   "Header": {
-    "transfers": "Transports",
+    "transfers": "Transfer",
     "avtopark": "Cars park",
     "whyUs": "Why us?",
     "travels": "Travels"
   },
   "BillBoard": {
-    "originalText": "Reliable partner for comfortable travel."
+    "originalText": "Reliable partner for comfortable travel.",
+    "button": "Order Transfer"
+  },
+  "Card": {
+    "title": "Transfer across Ukraine",
+    "body": "Transfer-IF is a company that specializes in transfers between Ukraine and Europe. We understand that traveling can be stressful, so we strive to make it as pleasant and carefree as possible.",
+    "first": "Sophisticated logistics plan: we will help you organize your cross-border travel so that you can arrive at your destination on time.",
+    "second": "Language barriers: our team speaks different languages so you can communicate with us without any problems.",
+    "third": "Time zones and time preferences: We understand the importance of being on time at your destination. Our transfers will help you optimize your time.",
+    "fourth": "Reduce stress: We take care of all aspects of organizing and coordinating your trip so you can simply enjoy your trip.",
+    "button": "Close"
+  },
+  "Form": {
+    "title": "Order Transfer",
+    "subtitle": "Detail of transfer",
+    "button": "Submit",
+    "selectTitle": "Type of transport",
+    "selectFirst": "Comfort (from 0.8 EUR/km)",
+    "selectSecond": "Vip (from 1.1 EUR/km)",
+    "errorName": "Your name is too short",
+    "errorPhone": "Your phone number is not correct because it is over than 9 symbols"
+  },
+  "Stage": {
+    "1": "Consultation and trip planning",
+    "2": "Choice of transport",
+    "3": "Payment for the trip",
+    "4": "Departure from the place of departure",
+    "5": "Trip monitoring and security",
+    "6": "Arrival at destination",
+    "title": "Stages of work"
+  },
+  "Footer": {
+    "main": "processing request from 08:00-22:00"
+  },
+  "WhyUs": {
+    "mainTitle": "Why us?",
+    "title1": "Professionalism and experience",
+    "title2": "Comfort and convenience",
+    "title3": "Safety comes first",
+    "title4": "A wide choice of transport",
+    "1": "Our team has many years of experience in the field of international transportation.",
+    "2": "We carefully plan every step of your trip so you can relax and enjoy the ride.",
+    "3": "Your safety is our highest priority. We adhere to the highest security standards and monitor every stage of the transfer.",
+    "4": "We offer a wide selection of transport for any budget."
   }
 }

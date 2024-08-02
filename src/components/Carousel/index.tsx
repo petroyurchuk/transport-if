@@ -2,13 +2,15 @@ import { carouselData } from "@/data/carousel";
 import Image from "next/image";
 import React from "react";
 
-type CarouselProps = {};
 const Carousel: React.FC = () => {
   return (
-    <div className="flex px-10 gap-10">
+    <div
+      id="avtopark"
+      className="flex flex-col  md:flex-row px-10 gap-10 mt-10"
+    >
       {carouselData.map((item) => (
-        <div key={item.id} className="flex flex-col gap-5">
-          <div className="flex justify-center items-center relative ">
+        <div key={item.id} className="flex flex-col items-center gap-5">
+          <div className="flex max-w-[300px] w-full justify-center items-center relative ">
             <Image
               src={item.imageUrl}
               width={300}

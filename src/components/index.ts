@@ -27,3 +27,7 @@ export { default as SidebarInfo } from "./SidebarInfo";
 export { default as Footer } from "./Footer";
 export { default as Stages } from "./Stages";
 export { default as Stage } from "./Stage";
+export { default as MobileNavigationList } from "./MobileNavigationList";
+export { default as HeaderTravels } from "./HeaderTravels";
+export { default as WhyUsItem } from "./WhyUsItem";
+export { default as WhyUsList } from "./WhyUsList";

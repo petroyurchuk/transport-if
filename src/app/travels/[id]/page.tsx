@@ -6,6 +6,7 @@ import {
   ContactButton,
   GalleryCarousel,
 } from "@/components";
+import { images } from "@/data/galleryCarousel";
 
 type TravelPageProps = {
   params: {
@@ -27,17 +28,17 @@ const TravelPage: React.FC<TravelPageProps> = ({ params }) => {
   const travel = travels.filter((travel) => travel.id === params.id)[0];
   return (
     <div>
-      <div className="w-full h-screen  relative z-0 mb-5 text-4xl flex justify-center items-center text-slate-950 animate-pulse">
-        Travel for your friends
-      </div>
       <div className="max-w-[1200px] m-auto flex">
         <div className="max-w-[1000px]">
-          <GalleryCarousel />
+          <GalleryCarousel images={images} />
           <div className="flex  justify-center gap-5 px-2">
-            <ContactButton bgColor="bg-purple-600">
-              Написати у Viber
+            <ContactButton
+              bgColor="bg-[#25D366]"
+              link="https://wa.me/380684792078"
+            >
+              Написати у WhatsApp
             </ContactButton>
-            <ContactButton bgColor="bg-sky-600">
+            <ContactButton bgColor="bg-sky-600" link="https://t.me/petro_y">
               Написати у Telegram
             </ContactButton>
           </div>

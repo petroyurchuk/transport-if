@@ -5,7 +5,7 @@ type PrinterEffectProps = {
 };
 const PrinterEffect: React.FC<PrinterEffectProps> = ({ originalText }) => {
   return (
-    <p className="animate-printer text-lg  md:text-2xl  md:tracking-widest overflow-hidden whitespace-nowrap max-w-[80%]">
+    <p className="animate-printer text-[14px]  md:text-2xl  md:tracking-widest overflow-hidden whitespace-nowrap w-full md:max-w-[80%]">
       {originalText}
     </p>
   );

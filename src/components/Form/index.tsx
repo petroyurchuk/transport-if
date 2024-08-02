@@ -9,10 +9,26 @@ import { sendDataToBot } from "@/services/sendDataToBot";
 import { Toaster } from "react-hot-toast";
 import toast from "react-hot-toast/headless";
 
-type FormProps = {};
-const Form: React.FC<FormProps> = () => {
+type FormProps = {
+  buttonValue: string;
+  subtitle: string;
+  selectTitle: string;
+  selectFirst: string;
+  selectSecond: string;
+  nameErrorMessage: string;
+  phoneErrorMessage: string;
+};
+const Form: React.FC<FormProps> = ({
+  buttonValue,
+  subtitle,
+  selectTitle,
+  selectFirst,
+  selectSecond,
+  nameErrorMessage,
+  phoneErrorMessage,
+}) => {
   const [isOpen, setIsOpen] = React.useState(false);
-  const [initialValue, setInitialValue] = React.useState("Вид транспорту");
+  const [initialValue, setInitialValue] = React.useState(selectTitle);
 
   const {
     register,
@@ -23,7 +39,11 @@ const Form: React.FC<FormProps> = () => {
   } = useForm<orderSchemaT>({ resolver: zodResolver(orderSchema) });
 
   const handleSelectTypeTransport = (
-    value: "Комфорт (від 0,8 євро/км)" | "Van (від 1,1 євро/км)"
+    value:
+      | "Комфорт (від 0.8 EUR/km)"
+      | "Vip (від 0.8 EUR/km)"
+      | "Vip (from 1.1 EUR/km)"
+      | "Comfort (from 0.8 EUR/km)"
   ) => {
     setInitialValue(value);
     setValue("typeTransport", value);
@@ -33,18 +53,17 @@ const Form: React.FC<FormProps> = () => {
   const submitHandler = async (data: orderSchemaT) => {
     await sendDataToBot(data);
     toast.success("Your request sended successfully");
-    console.log(data);
     reset();
   };
   return (
     <form onSubmit={handleSubmit(submitHandler)} className="w-full">
-      <Toaster
-        position="top-center"
-        toastOptions={{
-          duration: 1500,
-        }}
-      />
-      <div className="w-full flex justify-center gap-5">
+      <div className="w-full flex flex-col md:flex-row items-center justify-center gap-5">
+        <Toaster
+          position="top-center"
+          toastOptions={{
+            duration: 1500,
+          }}
+        />
         <InputWrapper>
           <input
             className="input-form"
@@ -54,9 +73,7 @@ const Form: React.FC<FormProps> = () => {
             placeholder="Name..."
           />
           {errors.name?.message && (
-            <p className=" text-red-500 mt-2 text-center">
-              {errors.name.message}
-            </p>
+            <p className=" text-red-500 mt-2 text-center">{nameErrorMessage}</p>
           )}
         </InputWrapper>
         <InputWrapper>
@@ -69,13 +86,13 @@ const Form: React.FC<FormProps> = () => {
           />
           {errors.phone?.message && (
             <p className=" text-red-500 mt-2 text-center">
-              {errors.phone.message}
+              {phoneErrorMessage}
             </p>
           )}
         </InputWrapper>
       </div>
       <Title tag="h4" styles="font-bold  text-white text-center my-5">
-        Деталі поїздки:
+        {subtitle}:
       </Title>
       <div className="w-full flex justify-center gap-5">
         <InputWrapper>
@@ -85,29 +102,29 @@ const Form: React.FC<FormProps> = () => {
             </button>
             {isOpen && (
               <div className="absolute -bottom-400 max-w-[300px] w-full z-10">
-                {["Комфорт (від 0,8 євро/км)", "Van (від 1,1 євро/км)"].map(
-                  (item, idx) => (
-                    <div
-                      onClick={() =>
-                        handleSelectTypeTransport(
-                          item as
-                            | "Комфорт (від 0,8 євро/км)"
-                            | "Van (від 1,1 євро/км)"
-                        )
-                      }
-                      key={idx}
-                      className="select-form"
-                    >
-                      {item}
-                    </div>
-                  )
-                )}
+                {[selectFirst, selectSecond].map((item, idx) => (
+                  <div
+                    onClick={() =>
+                      handleSelectTypeTransport(
+                        item as
+                          | "Комфорт (від 0.8 EUR/km)"
+                          | "Vip (від 0.8 EUR/km)"
+                          | "Vip (from 1.1 EUR/km)"
+                          | "Comfort (from 0.8 EUR/km)"
+                      )
+                    }
+                    key={idx}
+                    className="select-form"
+                  >
+                    {item}
+                  </div>
+                ))}
               </div>
             )}
           </div>
         </InputWrapper>
       </div>
-      <div className="flex justify-center gap-5 mt-5">
+      <div className="flex flex-col md:flex-row justify-center items-center gap-5 mt-5">
         <InputWrapper>
           <input
             className="input-form"
@@ -140,7 +157,7 @@ const Form: React.FC<FormProps> = () => {
         type="submit"
         className="text-white px-5 py-2 bg-purple-800 transition-all duration-150 hover:bg-purple-600 block m-auto mt-5 rounded-md max-w-[300px] min-w-[200px]"
       >
-        Submit
+        {buttonValue}
       </button>
     </form>
   );

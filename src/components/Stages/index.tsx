@@ -1,15 +1,18 @@
+import { useTranslations } from "next-intl";
 import { Title, Stage } from "@/components";
 import { stages } from "@/data/stage";
 
 const Stages: React.FC = () => {
+  const t = useTranslations("Stage");
+
   return (
-    <div className="max-w-[90%] w-full m-auto mb-10">
+    <div className="max-w-[90%] w-full m-auto mb-10 ">
       <Title tag="h4" styles="font-bold text-3xl text-white mb-5">
-        Етапи роботи
+        {t("title")}
       </Title>
-      <div className="flex gap-[50px]">
-        {stages.map(({ id, title, description }) => (
-          <Stage key={id} title={title} description={description} />
+      <div className="flex justify-center md:justify-normal gap-[25px] flex-wrap">
+        {stages.map(({ id, title }) => (
+          <Stage key={id} title={title} description={t(id)} />
         ))}
       </div>
     </div>

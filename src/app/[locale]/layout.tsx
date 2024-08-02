@@ -7,24 +7,26 @@ export const metadata: Metadata = {
   description: "Transportation in Ivano-Frankivsk district",
 };
 
-type RootLayoutProps = {
+type LocaleLayoutProps = {
   children: React.ReactNode;
   params: {
     locale: string;
   };
 };
 
-export default function RootLayout({
+export default function LocaleLayout({
   children,
   params,
-}: Readonly<RootLayoutProps>) {
+}: Readonly<LocaleLayoutProps>) {
   return (
-    <html lang={params.locale}>
-      <body className="bg-black/90">
-        <Header />
-        {children}
-        <Footer />
-      </body>
-    </html>
+    // <html lang={params.locale}>
+    // <body className="bg-black/90">
+    <div className="bg-black/90">
+      <Header />
+      {children}
+      <Footer />
+    </div>
+    // </body>
+    // </html>
   );
 }

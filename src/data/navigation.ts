@@ -4,7 +4,7 @@ export const navigationData: dataListT[] = [
   {
     id: 1,
     value: "transfers",
-    linkTo: "transfers",
+    linkTo: "transfer",
   },
   {
     id: 2,

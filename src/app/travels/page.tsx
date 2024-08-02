@@ -5,13 +5,11 @@ export const metadata: Metadata = {
   title: "Travels directions",
 };
 
-const TravelsPage = () => {
+export default function TravelsPage() {
   return (
-    <div className="flex flex-col gap-10">
-      <div className="w-full max-h-[500px]  h-full"></div>
-      <Directions />
+    <div className="flex flex-col">
+      {/* <Directions /> */}
       <Travels />
     </div>
   );
-};
-export default TravelsPage;
+}

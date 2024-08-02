@@ -29,7 +29,7 @@ const Travel: React.FC<TravelProps> = ({ id, travelTitle, travelImage }) => {
       </div>
 
       <button className="self-end px-5 py-2  text-purple-500 shadow-lg shadow-purple-300 rounded-md transition-all duration-150 hover:shadow-xl hover:shadow-purple-400 hover:scale-x-110 ">
-        More...{" "}
+        Дивитися{" "}
       </button>
     </Link>
   );
