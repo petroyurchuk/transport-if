@@ -2,9 +2,10 @@
 
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 import { useRouter, usePathname } from "next/navigation";
 import { animateScroll } from "react-scroll";
-import Link from "next/link";
+import { IoMdArrowRoundBack } from "react-icons/io";
 import { useAppDispatch } from "@/store/hooks";
 import { setSearch } from "@/store/search/slice";
 
@@ -17,14 +18,19 @@ const HeaderTravels: React.FC = () => {
     animateScroll.scrollToTop({ smooth: true, duration: 500 });
   };
   return (
-    <header className="w-full flex items-center min-h-[80px] max-h-[120px]  bg-black/90 shadow-md shadow-purple-600 mb-5">
+    <header className="w-full flex items-start flex-col md:flex-row md:items-center min-h-[80px] max-h-[120px]  bg-black/90 shadow-md shadow-purple-600 mb-5">
       <Link
         href={"/"}
-        className="px-4 py-2 bg-pink-500 rounded-md font-semibold text-white ml-5 transition-all duration-150  hover:tracking-wide"
+        className="px-4 py-2 bg-pink-500 rounded-md font-semibold text-white ml-5 mt-4 md:mt-0 transition-all duration-150  hover:tracking-wide"
       >
-        Повернутися до трансферів
+        <span className="hidden md:inline-block">
+          Повернутися до трансферів
+        </span>
+        <span className="md:hidden">
+          <IoMdArrowRoundBack />
+        </span>
       </Link>
-      <div className="max-w-[1200px] w-full  m-auto flex items-center">
+      <div className="max-w-[1200px] w-full  m-auto flex flex-col md:flex-row -mt-11 pb-2 md:-mt-0 md:pb-0 md:pt-2 md:px-3 items-center">
         <div onClick={() => handleLogo()}>
           <Image
             src={"/images/logo_tourism_company.png"}
@@ -38,7 +44,7 @@ const HeaderTravels: React.FC = () => {
           <input
             type="text"
             placeholder="Введіть назву туру..."
-            className="w-full max-w-[300px] md:max-w-[550px] py-2 rounded-lg pl-4 m-auto outline-none bg-gray-700 text-white placeholder:text-white"
+            className="w-[90%] md:w-full md:max-w-[550px] py-2 rounded-lg pl-4 m-auto outline-none bg-gray-700 text-white placeholder:text-white"
             onChange={(e) => dispatch(setSearch(e.target.value))}
           />
         )}
