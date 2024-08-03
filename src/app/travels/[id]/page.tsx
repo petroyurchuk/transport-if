@@ -38,7 +38,7 @@ const TravelPage: React.FC<TravelPageProps> = ({ params }) => {
             >
               Написати у WhatsApp
             </ContactButton>
-            <ContactButton bgColor="bg-sky-600" link="https://t.me/petro_y">
+            <ContactButton bgColor="bg-sky-600" link="https://t.me/vova3s">
               Написати у Telegram
             </ContactButton>
           </div>
