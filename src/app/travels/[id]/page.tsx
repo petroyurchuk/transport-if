@@ -29,9 +29,9 @@ const TravelPage: React.FC<TravelPageProps> = ({ params }) => {
   return (
     <div>
       <div className="max-w-[1200px] m-auto flex">
-        <div className="max-w-[1000px]">
+        <div className="w-full  md:max-w-[1000px]">
           <GalleryCarousel images={images} />
-          <div className="flex  justify-center gap-5 px-2">
+          <div className="flex flex-col items-center md:flex-row  justify-center gap-5 px-2">
             <ContactButton
               bgColor="bg-[#25D366]"
               link="https://wa.me/380684792078"
@@ -42,17 +42,15 @@ const TravelPage: React.FC<TravelPageProps> = ({ params }) => {
               Написати у Telegram
             </ContactButton>
           </div>
-          <TravelDescription travel={travel} />
         </div>
-        <div>
-          <div className="ml-2 relative min-h-[1000px] z-50 ">
-            <div className="sticky top-5">
-              <SidebarInfo label="Контакти" inputValue="+380 68 20 11 720" />
-              <SidebarInfo label="Адрес" inputValue="Туристична фірма" />
-            </div>
+        <div className="hidden ml-2 relative h-[650px] z-50 md:block">
+          <div className="sticky top-5">
+            <SidebarInfo label="Контакти" inputValue="+380 68 479 20 78" />
+            <SidebarInfo label="Адрес" inputValue="Туристична фірма" />
           </div>
         </div>
       </div>
+      <TravelDescription travel={travel} />
     </div>
   );
 };

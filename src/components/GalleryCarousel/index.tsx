@@ -25,9 +25,11 @@ const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
           <a
             key={id}
             href={src}
-            className={`inline-flex ${
-              parseInt(id) % 2 === 0 ? "max-w-[45%]" : "max-w-[25%]"
-            }  w-full mr-2`}
+            className={` inline-flex ${
+              parseInt(id) % 2 === 0
+                ? "px-3 md:px-0 md:pl-1 md:max-w-[45%]"
+                : "px-3 md:px-0 md:pl-1 md:max-w-[25%]"
+            }  w-full md:mr-2`}
           >
             <Image
               width={parseInt(id) % 2 === 0 ? 450 : 350}
@@ -38,43 +40,6 @@ const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
             />
           </a>
         ))}
-
-        {/* <a
-          href="/images/first-car.jpg"
-          className="inline-flex max-w-[15%] w-full mr-2"
-        >
-          <Image
-            width={250}
-            height={300}
-            alt="img1"
-            src="/images/first-car.jpg"
-            className="min-h-[300px]   w-full object-cover"
-          />
-        </a>
-        <a
-          href="/images/second-car.jpg"
-          className="inline-flex max-h-[300px] h-full  max-w-[65%] w-full mr-2"
-        >
-          <Image
-            width={450}
-            height={300}
-            alt="img1"
-            src="/images/second-car.jpg"
-            className="min-h-[300px] w-full object-cover "
-          />
-        </a>
-        <a
-          href="/images/first-car.jpg"
-          className="inline-flex max-w-[15%] w-full "
-        >
-          <Image
-            width={250}
-            height={300}
-            alt="img1"
-            src="/images/first-car.jpg"
-            className="min-h-[300px]   w-full object-cover"
-          />
-        </a> */}
       </LightGallery>
     </div>
   );

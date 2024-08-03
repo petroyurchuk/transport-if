@@ -7,7 +7,7 @@ type TravelDescriptionProps = {
 };
 const TravelDescription: React.FC<TravelDescriptionProps> = ({ travel }) => {
   return (
-    <div className="pb-10">
+    <div className="pb-10 px-3 max-w-[90%] md:max-w-[1200px] m-auto">
       <Title
         tag="h1"
         styles="text-4xl font-bold text-slate-900 text-center py-5"

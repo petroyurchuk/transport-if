@@ -29,7 +29,7 @@ const DetailInfo: React.FC<DetailInfoProps> = ({ detailInfo }) => {
     >
       <h3
         onClick={() => handleIsFull()}
-        className="font-semibold text-slate-900 uppercase w-full flex items-center justify-between text-xl py-2 cursor-pointer h-[50px]"
+        className="font-semibold text-slate-900 uppercase w-full flex items-center justify-between text-lg md:text-xl py-2 cursor-pointer h-[50px]"
       >
         <span>{detailInfo.mainTitle}</span>
         <span className="font-bold text-gray-400 text-3xl -mt-3">
