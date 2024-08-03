@@ -21,7 +21,7 @@ const HeaderTravels: React.FC = () => {
     <header className="w-full flex items-start flex-col md:flex-row md:items-center min-h-[80px] max-h-[120px]  bg-black/90 shadow-md shadow-purple-600 mb-5">
       <Link
         href={"/"}
-        className="px-4 py-2 bg-pink-500 rounded-md font-semibold text-white ml-5 mt-4 md:mt-0 transition-all duration-150  hover:tracking-wide"
+        className="relative z-50 px-4 py-2 bg-pink-500 rounded-md font-semibold text-white ml-5 mt-4 md:mt-0 transition-all duration-150  hover:tracking-wide"
       >
         <span className="hidden md:inline-block">
           Повернутися до трансферів
