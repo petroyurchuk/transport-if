@@ -19,9 +19,9 @@ const Card: React.FC<CardProps> = ({ title, body, list, buttonValue }) => {
     offset: ["start end", "start start"],
   });
   const handleExtend = async () => {
-    await animate("article", { x: -300, width: "60%" });
+    await animate("article", { x: -2000, width: "60%" });
     await animate("#close", { pointerEvents: "all", opacity: 1 });
-    await animate("#extend-list", { x: -100, opacity: 1 });
+    await animate("#extend-list", { x: "-1%", opacity: 1 });
   };
   const handleClose = () => {
     animate("article", { x: 0 });
@@ -55,13 +55,13 @@ const Card: React.FC<CardProps> = ({ title, body, list, buttonValue }) => {
           {body}
         </p>
       </motion.article>
-      <div className="absolute right-0 max-w-[30%] min-h-[600px] ">
+      <div className="absolute right-0 max-w-[95%] min-h-[300px] max-h-[600px] ">
         <div id="extend-list" className="w-full translate-x-[100%] opacity-50">
           <AdditionalInformation list={list} />
         </div>
         <div
           id="close"
-          className="pointer-events-none absolute left-[50%] -translate-x-[100%] bottom-0  text-white uppercase font-bold  tracking-widest text-xl opacity-0 cursor-pointer transition-all duration-150  z-20 bg-gradient-to-r from-red-400 to-purple-600 p-3 rounded-xl hover:shadow-lg hover:shadow-purple-400"
+          className="pointer-events-none absolute left-[50%] -translate-x-[50%] -bottom-[12%]   text-white uppercase font-bold  tracking-widest text-xl opacity-0 cursor-pointer transition-all duration-150  z-20 bg-gradient-to-r from-red-400 to-purple-600 p-3 rounded-xl hover:shadow-lg hover:shadow-purple-400"
           onClick={handleClose}
         >
           {buttonValue}
