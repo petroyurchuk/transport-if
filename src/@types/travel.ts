@@ -3,11 +3,11 @@ export type TravelT = {
   direction: string;
   travelTitle: string;
   travelImage: string;
-  travelPlan: TravelPlanT[];
+  description:string;
 };
 
-type TravelPlanT = {
-  id: string;
-  time: string;
-  description: string;
-};
+// type TravelPlanT = {
+//   id: string;
+//   time: string;
+//   description: string;
+// };

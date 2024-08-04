@@ -46,7 +46,7 @@ const TravelPage: React.FC<TravelPageProps> = ({ params }) => {
         <div className="hidden ml-2 relative h-[650px] z-50 md:block">
           <div className="sticky top-5">
             <SidebarInfo label="Контакти" inputValue="+380 68 479 20 78" />
-            <SidebarInfo label="Адрес" inputValue="Туристична фірма" />
+            {/* <SidebarInfo label="Адрес" inputValue="Туристична фірма" /> */}
           </div>
         </div>
       </div>
