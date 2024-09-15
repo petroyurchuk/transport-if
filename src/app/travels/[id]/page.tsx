@@ -30,7 +30,7 @@ const TravelPage: React.FC<TravelPageProps> = ({ params }) => {
     <div>
       <div className="max-w-[1200px] m-auto flex">
         <div className="w-full  md:max-w-[1000px]">
-          <GalleryCarousel images={images} />
+          <GalleryCarousel images={images[params.id]} />
           <div className="flex flex-col items-center md:flex-row  justify-center gap-5 px-2">
             <ContactButton
               bgColor="bg-[#25D366]"

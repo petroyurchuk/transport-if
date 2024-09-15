@@ -16,6 +16,8 @@ const NavigationItem: React.FC<NavigationItemProps> = ({ value, linkTo }) => {
         >
           {value}
         </Link>
+      ) : linkTo.includes("tel:") ? (
+        <a href={linkTo}>{value}</a>
       ) : (
         <ScrollLink smooth to={linkTo}>
           {value}

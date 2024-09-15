@@ -14,8 +14,8 @@ const Travel: React.FC<TravelProps> = ({ id, travelTitle, travelImage }) => {
       className="max-w-[375px] w-full min-h-[420px] max-h-[520px]  shadow-md p-5 flex flex-col gap-7 cursor-pointer rounded-md transition-all duration-150 hover:-translate-y-2"
     >
       <h3 className="font-bold text-xl max-w-full max-h-[100px] overflow-hidden ">
-        {travelTitle.length > 70
-          ? travelTitle.substring(0, 70) + "..."
+        {travelTitle.length > 50
+          ? travelTitle.substring(0, 50) + "..."
           : travelTitle}
       </h3>
       <div className="max-w-full overflow-hidden">

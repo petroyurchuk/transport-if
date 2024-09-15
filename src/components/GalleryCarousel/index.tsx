@@ -6,10 +6,10 @@ import Image from "next/image";
 import "lightgallery/css/lightgallery.css";
 import "lightgallery/css/lg-zoom.css";
 import "lightgallery/css/lg-thumbnail.css";
-import { imagesT } from "@/@types/gallery";
+import { imageT } from "@/@types/gallery";
 
 type GalleryCarouselProps = {
-  images: imagesT[];
+  images: imageT[];
 };
 
 const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
@@ -21,7 +21,7 @@ const GalleryCarousel: React.FC<GalleryCarouselProps> = ({ images }) => {
         plugins={[lgZoom]}
         mode="lg-fade"
       >
-        {images.map(({ id, src, title }) => (
+        {images?.map(({ id, src, title }) => (
           <a
             key={id}
             href={src}

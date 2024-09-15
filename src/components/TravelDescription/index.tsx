@@ -1,7 +1,6 @@
 import { TravelT } from "@/@types/travel";
 import { DetailInfo, ListPrice, Title } from "@/components";
 import { detailInfo } from "@/data/detailInfo";
-import { listPrice, listPrice2, listPrice3 } from "@/data/listPrice";
 
 type TravelDescriptionProps = {
   travel: TravelT;
@@ -28,18 +27,12 @@ const TravelDescription: React.FC<TravelDescriptionProps> = ({ travel }) => {
         {/* // ))} } */}
       </div>
       <div className="space-y-4">
-        <ListPrice
-          listPrice={listPrice}
-          title="Вартість із VIP обслуговуванням (всі деталі по телефону)"
-        />
-        <ListPrice
-          listPrice={listPrice2}
-          title="Вартість походу при долученні до групи (гід+транспорт)"
-        />
-        <ListPrice
-          listPrice={listPrice3}
-          title="Вартість індивідуального походу (гід+транспорт)"
-        />
+        {travel.listPrices[travel.id]?.map((listPrice, idx) => (
+          <ListPrice
+            listPrice={listPrice}
+            title={travel.listPricesTitles[idx]}
+          />
+        ))}
       </div>
       {detailInfo.map((detail) => (
         <DetailInfo key={detail.id} detailInfo={detail} />

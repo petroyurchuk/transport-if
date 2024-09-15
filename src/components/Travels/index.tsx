@@ -8,7 +8,7 @@ const Travels: React.FC = () => {
   const { searchInput } = useAppSelector((state) => state.search);
 
   return (
-    <div className="w-full px-10">
+    <div className="w-full px-10 flex flex-col items-center md:items-baseline  md:flex-row gap-10 flex-wrap ">
       {travels
         .filter((travel) =>
           travel.travelTitle.toLowerCase().includes(searchInput.toLowerCase())
