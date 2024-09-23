@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { StoreProvider } from "@/providers/StoreProvider";
 import "./globals.css";
+import { Sidebar } from "@/components";
 
 export const metadata: Metadata = {
   title: "Main",
@@ -15,7 +16,10 @@ export default function RootLayout({
   return (
     <StoreProvider>
       <html>
-        <body>{children}</body>
+        <body>
+          {children}
+          <Sidebar />
+        </body>
       </html>
     </StoreProvider>
   );

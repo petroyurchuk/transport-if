@@ -4,6 +4,7 @@ import { listPricesT } from "./listPrice";
 export type TravelT = {
   id: string;
   direction: string;
+  type: "піші" | "джип" | "рафтинг";
   travelTitle: string;
   travelImage: string;
   description: string;

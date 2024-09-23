@@ -31,3 +31,5 @@ export { default as MobileNavigationList } from "./MobileNavigationList";
 export { default as HeaderTravels } from "./HeaderTravels";
 export { default as WhyUsItem } from "./WhyUsItem";
 export { default as WhyUsList } from "./WhyUsList";
+export { default as Sidebar } from "./Sidebar";
+export { default as FilterTypes } from "./FilterTypes";
