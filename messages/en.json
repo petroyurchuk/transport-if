@@ -8,7 +8,9 @@
   },
   "BillBoard": {
     "originalText": "Reliable partner for comfortable travel.",
-    "button": "Order Transfer"
+    "button": "Order Transfer",
+    "tourQuestion": "Your travel dream is here.",
+    "linkTour": "Choose a tour"
   },
   "Card": {
     "title": "Transfer across Ukraine",

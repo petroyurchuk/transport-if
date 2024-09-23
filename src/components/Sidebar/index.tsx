@@ -3,7 +3,7 @@ import { FaTelegram, FaWhatsapp } from "react-icons/fa";
 type Props = {};
 const Sidebar = (props: Props) => {
   return (
-    <div className="fixed top-[50%]  left-[-190px] h-[250px] max-w-[250px] w-full flex flex-col gap-3">
+    <div className="fixed z-[100] top-[50%]  left-[-190px] h-[250px] max-w-[250px] w-full flex flex-col gap-3">
       <a
         href="https://t.me/vova3s"
         target="_blank"

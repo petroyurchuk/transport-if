@@ -1,6 +1,7 @@
 import React from "react";
 import { Button, PrinterEffect, Title } from "@/components";
 import { useTranslations } from "next-intl";
+import Link from "next/link";
 
 const BillBoard: React.FC = () => {
   const t = useTranslations("BillBoard");
@@ -26,6 +27,13 @@ const BillBoard: React.FC = () => {
         </Title>
         <PrinterEffect originalText={t("originalText")} />
         <Button pathScroll="transfer">{t("button")}</Button>
+        <PrinterEffect originalText={t("tourQuestion")} />
+        <Link
+          className={`text-lg px-4 py-2  flex justify-center items-center bg-gradient-to-b from-pink-600 to-pink-400 min-w-[200px] md:text-xl uppercase font-semibold tracking-widest rounded-xl cursor-pointer transition-all duration-150 hover:bg-gradient-to-t hover:tracking-[2px] outline-none max-w-[400px] `}
+          href={"/travels"}
+        >
+          {t("linkTour")}
+        </Link>
       </div>
     </div>
   );
