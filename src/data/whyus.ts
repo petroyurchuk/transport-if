@@ -13,8 +13,8 @@ export const whyUsList: WhyUsT[] = [
     id: "3",
     title: "title3",
   },
-  {
-    id: "4",
-    title: "title4",
-  },
+  // {
+  //   id: "4",
+  //   title: "title4",
+  // },
 ];

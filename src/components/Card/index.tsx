@@ -46,7 +46,7 @@ const Card: React.FC<CardProps> = ({ title, body, list, buttonValue }) => {
         ref={targetRef}
         className={`w-[90%] lg:w-[70%] min-h-[300px] md:min-h-[600px] flex flex-col items-center justify-center gap-5 text-white text-lg tracking-wider rounded-xl shadow-2xl cursor-pointer z-10 `}
         style={{ scaleX, opacity, backgroundColor }}
-        onClick={() => handleExtend()}
+        // onClick={() => handleExtend()}
       >
         <Title tag="h2" styles="text-xl md:text-4xl font-bold">
           {title}

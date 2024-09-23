@@ -14,6 +14,10 @@ const BillBoard: React.FC = () => {
           autoPlay
           muted
           loop
+          playsInline
+          controls={false}
+          disablePictureInPicture
+          preload="auto"
         />
       </div>
       <div className="absolute top-[45%] left-[1%] md:left-[10%]   text-white text-[2.3rem] space-y-5 ">

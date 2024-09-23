@@ -136,4 +136,139 @@ export const images: imagesT = {
       src: "/images/waterfall-huk/5.jpg",
     },
   ],
+  "6": [
+    {
+      id: "1",
+      title: "Писаний камінь",
+      src: "/images/written-stone/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Писаний камінь",
+      src: "/images/written-stone/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Писаний камінь",
+      src: "/images/written-stone/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Писаний камінь",
+      src: "/images/written-stone/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Писаний камінь",
+      src: "/images/written-stone/5.jpg",
+    },
+  ],
+  "7": [
+    {
+      id: "1",
+      title: "Полонина Кринта",
+      src: "/images/krunta/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Полонина Кринта",
+      src: "/images/krunta/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Полонина Кринта",
+      src: "/images/krunta/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Полонина Кринта",
+      src: "/images/krunta/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Полонина Кринта",
+      src: "/images/krunta/5.jpg",
+    },
+  ],
+  "8": [
+    {
+      id: "1",
+      title: "Гора Біла Кобила",
+      src: "/images/white-horse/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Гора Біла Кобила",
+      src: "/images/white-horse/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Гора Біла Кобила",
+      src: "/images/white-horse/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Гора Біла Кобила",
+      src: "/images/white-horse/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Гора Біла Кобила",
+      src: "/images/white-horse/5.jpg",
+    },
+  ],
+  "9": [
+    {
+      id: "1",
+      title: "Гора Бербенескул",
+      src: "/images/berbeneskul/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Гора Бербенескул",
+      src: "/images/berbeneskul/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Гора Бербенескул",
+      src: "/images/berbeneskul/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Гора Бербенескул",
+      src: "/images/berbeneskul/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Гора Бербенескул",
+      src: "/images/berbeneskul/5.jpg",
+    },
+  ],
+  "10": [
+    {
+      id: "1",
+      title: "Гора Бербенескул",
+      src: "/images/hamster/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Гора Бербенескул",
+      src: "/images/hamster/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Гора Бербенескул",
+      src: "/images/hamster/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Гора Бербенескул",
+      src: "/images/hamster/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Гора Бербенескул",
+      src: "/images/hamster/5.jpg",
+    },
+  ],
 };
