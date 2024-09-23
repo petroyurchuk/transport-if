@@ -29,6 +29,7 @@ const TravelDescription: React.FC<TravelDescriptionProps> = ({ travel }) => {
       <div className="space-y-4">
         {travel.listPrices[travel.id]?.map((listPrice, idx) => (
           <ListPrice
+            key={idx}
             listPrice={listPrice}
             title={travel.listPricesTitles[idx]}
           />
