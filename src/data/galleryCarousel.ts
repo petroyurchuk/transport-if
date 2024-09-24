@@ -379,4 +379,58 @@ export const images: imagesT = {
       src: "/images/polony-peppers/5.jpg",
     },
   ],
+  "15": [
+    {
+      id: "1",
+      title: "Озеро Несамовите",
+      src: "/images/lake/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Озеро Несамовите",
+      src: "/images/lake/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Озеро Несамовите",
+      src: "/images/lake/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Озеро Несамовите",
+      src: "/images/lake/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Озеро Несамовите",
+      src: "/images/lake/5.jpg",
+    },
+  ],
+  "16": [
+    {
+      id: "1",
+      title: "Манявський водоспад",
+      src: "/images/waterfall/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Манявський водоспад",
+      src: "/images/waterfall/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Манявський водоспад",
+      src: "/images/waterfall/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Манявський водоспад",
+      src: "/images/waterfall/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Манявський водоспад",
+      src: "/images/waterfall/5.jpg",
+    },
+  ],
 };
