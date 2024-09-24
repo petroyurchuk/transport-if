@@ -7,7 +7,7 @@ export const metadata: Metadata = {
 
 export default function TravelsPage() {
   return (
-    <div className="flex flex-col">
+    <div className="flex flex-col pb-10">
       {/* <Directions /> */}
       <FilterTypes />
       <Travels />
