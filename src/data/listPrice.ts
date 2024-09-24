@@ -41,36 +41,31 @@ const listPrice4: listPriceT[] = [
   {
     id: "1",
     quantity: "до 5 осіб",
-    generalPrice: "9 900 грн",
+    generalPrice: "13 000 грн",
   },
 ];
 const listPrice5: listPriceT[] = [
   {
     id: "1",
-    quantity: "за особу",
-    generalPrice: "800 грн./особа",
+    quantity: "дорослі",
+    generalPrice: "1000 грн./особа",
   },
   {
     id: "2",
     quantity: "діти від 6 до 14 років",
-    generalPrice: "700 грн./особа",
+    generalPrice: "800 грн./особа",
   },
 ];
 const listPrice6: listPriceT[] = [
   {
     id: "1",
     quantity: "до 8 осіб",
-    generalPrice: "6 900 грн./похід",
+    generalPrice: "4 500 грн.",
   },
   {
     id: "2",
-    quantity: "від 8 до 16 осіб",
-    generalPrice: "8 900 грн./похід",
-  },
-  {
-    id: "3",
-    quantity: "більше 16 осіб ",
-    generalPrice: "прораховується персонально",
+    quantity: "до 16 осіб",
+    generalPrice: "5 500 грн.",
   },
 ];
 const listPrice7: listPriceT[] = [
@@ -90,7 +85,7 @@ const listPrice8: listPriceT[] = [
     id: "2",
     quantity: "Важливо! Цінова політика, може змінюватись.",
     generalPrice:
-      "Тому пишіть на Viber або телефонуйте Ми надамо детальну інформацію! ",
+      "Тому пишіть на Telegram або телефонуйте Ми надамо детальну інформацію! ",
   },
 ];
 const listPrice9: listPriceT[] = [
@@ -139,7 +134,7 @@ const listPrice12: listPriceT[] = [
     id: "2",
     quantity: "Важливо! Цінова політика, може змінюватись.",
     generalPrice:
-      "Тому пишіть на Viber або телефонуйте Ми надамо детальну інформацію! ",
+      "Тому пишіть на Telegram або телефонуйте Ми надамо детальну інформацію! ",
   },
 ];
 const listPrice13: listPriceT[] = [
@@ -154,17 +149,53 @@ const listPrice13: listPriceT[] = [
     generalPrice: "5 500 грн.",
   },
 ];
+const listPrice14: listPriceT[] = [
+  {
+    id: "1",
+    quantity: "Важливо! Ціна залежить від місця відбуття.",
+    generalPrice:
+      "Тому пишіть на Telegram  або телефонуйте Ми надамо детальну інформацію! ",
+  },
+];
+const listPrice15: listPriceT[] = [
+  {
+    id: "1",
+    quantity: "до 8 осіб",
+    generalPrice: "8 000 грн./похід",
+  },
+  {
+    id: "2",
+    quantity: "від 8 до 16 осіб",
+    generalPrice: "10 000 грн./похід",
+  },
+  {
+    id: "3",
+    quantity: "більше 16 осіб ",
+    generalPrice: "прораховується персонально",
+  },
+];
+const listPrice16: listPriceT[] = [
+  {
+    id: "1",
+    quantity: "Важливо! Ціна залежить від місця.",
+    generalPrice:
+      "Тому пишіть на Telegram  або телефонуйте Ми надамо детальну інформацію! ",
+  },
+];
 
 export const listPrices: listPricesT = {
   "1": [listPrice9, listPrice10, listPrice13, listPrice11],
-  "2": [listPrice4, listPrice5, listPrice6],
+  "2": [listPrice4, listPrice5, listPrice6, listPrice15],
   "3": [listPrice7, listPrice8],
   "4": [listPrice9, listPrice10, listPrice13, listPrice11],
-  "5": [listPrice5],
+  "5": [listPrice13],
   "6": [listPrice12],
   "7": [listPrice12],
   "8": [listPrice8],
   "9": [listPrice9, listPrice10, listPrice13, listPrice11],
+  "10": [listPrice14],
   "11": [listPrice8],
   "12": [listPrice12],
+  "13": [listPrice16],
+  "14": [listPrice14],
 };

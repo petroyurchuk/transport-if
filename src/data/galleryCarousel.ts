@@ -325,4 +325,58 @@ export const images: imagesT = {
       src: "/images/bustrets/5.jpg",
     },
   ],
+  "13": [
+    {
+      id: "1",
+      title: "Рафтинг",
+      src: "/images/rafting/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Рафтинг",
+      src: "/images/rafting/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Рафтинг",
+      src: "/images/rafting/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Рафтинг",
+      src: "/images/rafting/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Рафтинг",
+      src: "/images/rafting/5.jpg",
+    },
+  ],
+  "14": [
+    {
+      id: "1",
+      title: "Полонина Перців",
+      src: "/images/polony-peppers/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Полонина Перців",
+      src: "/images/polony-peppers/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Полонина Перців",
+      src: "/images/polony-peppers/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Полонина Перців",
+      src: "/images/polony-peppers/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Полонина Перців",
+      src: "/images/polony-peppers/5.jpg",
+    },
+  ],
 };

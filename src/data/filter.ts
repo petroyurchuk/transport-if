@@ -16,4 +16,9 @@ export const filters: FilterT[] = [
     label: "рафтинг",
     type: "рафтинг",
   },
+  {
+    id: "4",
+    label: "Буковель екскурсії",
+    type: "буковель",
+  },
 ];
