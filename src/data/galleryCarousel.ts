@@ -271,4 +271,58 @@ export const images: imagesT = {
       src: "/images/hamster/5.jpg",
     },
   ],
+  "11": [
+    {
+      id: "1",
+      title: "Гора Ігрець",
+      src: "/images/ihrets/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Гора Ігрець",
+      src: "/images/ihrets/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Гора Ігрець",
+      src: "/images/ihrets/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Гора Ігрець",
+      src: "/images/ihrets/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Гора Ігрець",
+      src: "/images/ihrets/5.jpg",
+    },
+  ],
+  "12": [
+    {
+      id: "1",
+      title: "Бистрець",
+      src: "/images/bustrets/1.jpg",
+    },
+    {
+      id: "2",
+      title: "Бистрець",
+      src: "/images/bustrets/2.jpg",
+    },
+    {
+      id: "3",
+      title: "Бистрець",
+      src: "/images/bustrets/3.jpg",
+    },
+    {
+      id: "4",
+      title: "Бистрець",
+      src: "/images/bustrets/4.jpg",
+    },
+    {
+      id: "5",
+      title: "Бистрець",
+      src: "/images/bustrets/5.jpg",
+    },
+  ],
 };

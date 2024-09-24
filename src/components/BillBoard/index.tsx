@@ -21,7 +21,7 @@ const BillBoard: React.FC = () => {
           preload="auto"
         />
       </div>
-      <div className="absolute top-[45%] left-[1%] md:left-[10%]   text-white text-[2.3rem] space-y-5 ">
+      <div className="absolute top-[45%] left-[2%] md:left-[10%]   text-white text-[2.3rem] space-y-5 ">
         <Title tag="h1" styles={"main-title"}>
           Transport IF
         </Title>

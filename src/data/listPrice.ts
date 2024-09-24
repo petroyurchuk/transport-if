@@ -83,8 +83,8 @@ const listPrice7: listPriceT[] = [
 const listPrice8: listPriceT[] = [
   {
     id: "1",
-    quantity: "6-7 осіб",
-    generalPrice: "3 200 грн",
+    quantity: "4-5 осіб",
+    generalPrice: "2 500 грн",
   },
   {
     id: "2",
@@ -129,11 +129,42 @@ const listPrice11: listPriceT[] = [
     generalPrice: "прораховується персонально",
   },
 ];
+const listPrice12: listPriceT[] = [
+  {
+    id: "1",
+    quantity: "4-5 осіб",
+    generalPrice: "3 000 грн./похід",
+  },
+  {
+    id: "2",
+    quantity: "Важливо! Цінова політика, може змінюватись.",
+    generalPrice:
+      "Тому пишіть на Viber або телефонуйте Ми надамо детальну інформацію! ",
+  },
+];
+const listPrice13: listPriceT[] = [
+  {
+    id: "1",
+    quantity: "до 8 осіб",
+    generalPrice: "4 500 грн.",
+  },
+  {
+    id: "2",
+    quantity: "до 16 осіб",
+    generalPrice: "5 500 грн.",
+  },
+];
 
 export const listPrices: listPricesT = {
-  "1": [listPrice, listPrice2, listPrice3],
+  "1": [listPrice9, listPrice10, listPrice13, listPrice11],
   "2": [listPrice4, listPrice5, listPrice6],
   "3": [listPrice7, listPrice8],
-  "4": [listPrice9, listPrice10, listPrice11],
+  "4": [listPrice9, listPrice10, listPrice13, listPrice11],
   "5": [listPrice5],
+  "6": [listPrice12],
+  "7": [listPrice12],
+  "8": [listPrice8],
+  "9": [listPrice9, listPrice10, listPrice13, listPrice11],
+  "11": [listPrice8],
+  "12": [listPrice12],
 };
