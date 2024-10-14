@@ -1,9 +1,13 @@
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import { FaTelegram, FaWhatsapp } from "react-icons/fa";
 import { Logo } from "@/components";
 
-const Footer: React.FC = () => {
-  const t = useTranslations("Footer");
+type FooterProps = {
+  messages: Record<string, any>;
+};
+
+const Footer: React.FC<FooterProps> = ({ messages }) => {
+  // const t = useTranslations("Footer");
   return (
     <footer className="w-full border-t-[1px] border-purple-200 pt-10">
       <div className="flex-col gap-5 justify-center max-w-[1200px] m-auto text-white flex md:flex-row  md:justify-between items-center">
@@ -14,7 +18,13 @@ const Footer: React.FC = () => {
           <a className="hover:underline" href="tel:+380 68 479 20 78">
             +38 (068) 479 20 78
           </a>
-          <p>{t("main")}</p>
+          <p>
+            {
+              messages.main
+
+              // t("main")
+            }
+          </p>
         </div>
         <div className="flex gap-2">
           <a

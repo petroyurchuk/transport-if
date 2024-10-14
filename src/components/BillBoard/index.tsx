@@ -1,11 +1,13 @@
 import React from "react";
 import { Button, PrinterEffect, Title } from "@/components";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 import Link from "next/link";
 
-const BillBoard: React.FC = () => {
-  const t = useTranslations("BillBoard");
-
+const BillBoard: React.FC<{ messages: Record<string, any> }> = ({
+  messages,
+}) => {
+  // const t = useTranslations("BillBoard");
+  // console.log("From billboard", messages);
   return (
     <div className="relative h-screen">
       <div className="w-full h-full absolute top-0">
@@ -25,14 +27,30 @@ const BillBoard: React.FC = () => {
         <Title tag="h1" styles={"main-title"}>
           Transport IF
         </Title>
-        <PrinterEffect originalText={t("originalText")} />
-        <Button pathScroll="transfer">{t("button")}</Button>
-        <PrinterEffect originalText={t("tourQuestion")} />
+        <PrinterEffect
+          originalText={
+            messages?.originalText
+            // t("originalText")
+          }
+        />
+        <Button pathScroll="transfer">
+          {/* {t("button")} */}
+          {messages?.button}
+        </Button>
+        <PrinterEffect
+          originalText={
+            messages?.tourQuestion
+            // t("tourQuestion")
+          }
+        />
         <Link
           className={`text-lg px-4 py-2  flex justify-center items-center bg-gradient-to-b from-pink-600 to-pink-400 min-w-[200px] md:text-xl uppercase font-semibold tracking-widest rounded-xl cursor-pointer transition-all duration-150 hover:bg-gradient-to-t hover:tracking-[2px] outline-none max-w-[400px] `}
           href={"/travels"}
         >
-          {t("linkTour")}
+          {
+            messages?.linkTour
+            // t("linkTour")
+          }
         </Link>
       </div>
     </div>

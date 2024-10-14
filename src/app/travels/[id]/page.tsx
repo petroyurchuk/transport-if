@@ -14,6 +14,12 @@ type TravelPageProps = {
   };
 };
 
+export async function generateStaticParams() {
+  return travels.map((travel) => ({
+    id: travel.id,
+  }));
+}
+
 export async function generateMetadata({
   params,
 }: TravelPageProps): Promise<Metadata> {

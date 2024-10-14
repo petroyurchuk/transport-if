@@ -5,13 +5,17 @@ import {
   MobileNavigationList,
   NavigationList,
 } from "@/components";
-import { useTranslations } from "next-intl";
+// import { useTranslations } from "next-intl";
 
-const Header: React.FC = () => {
-  const t = useTranslations("Header");
+type HeaderProps = {
+  messages: Record<string, any>;
+};
+
+const Header: React.FC<HeaderProps> = ({ messages }) => {
+  // const t = useTranslations("Header");
   const mutatedNavigationData = navigationData.map((item) => ({
     ...item,
-    value: t(item.value),
+    value: messages[item.value],
   }));
   return (
     <header className="w-full fixed text-white flex justify-center items-center min-h-16 gap-10 z-10">
